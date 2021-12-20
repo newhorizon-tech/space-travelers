@@ -5,11 +5,33 @@ import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import {
+  BrowserRouter as Router, Routes, Route, Link,
+} from 'react-router-dom';
+import logo from './img/planet.png'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router> 
+        <App />
+        <nav>
+          <div className='left'> 
+            <img className="img-logo" src= {logo} />
+            <Link className="logo" to="/"> Space Traveler's Hub</Link>
+          </div>
+          <div className='right'> 
+            <Link className="nav-link" to="/">Rockets</Link>
+            <Link className="nav-link" to="/">Missions</Link>
+            <Link className="nav-link" to="/">My Profile</Link>
+          </div>
+        </nav>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/" element={<App />} />
+          <Route path="/" element={<App />} />
+        </Routes>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
