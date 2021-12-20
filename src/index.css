@@ -61,3 +61,7 @@ nav {
 .nav-link:nth-child(2) {
   border-right: 1px solid blue;
 }
+
+.active {
+  color: red;
+}
