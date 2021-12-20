@@ -9,6 +9,7 @@ import App from './App';
 import store from './app/store';
 import logo from './img/planet.png';
 import Missions from './components/Missions';
+import Myprofile from './components/Myprofile';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,12 +24,12 @@ ReactDOM.render(
           <div className="right">
             <NavLink className="nav-link" to="/">Rockets</NavLink>
             <NavLink className="nav-link" to="/missions">Missions</NavLink>
-            <NavLink className="nav-link" to="/">My Profile</NavLink>
+            <NavLink className="nav-link" to="/myprofile">My Profile</NavLink>
           </div>
         </nav>
         <Routes>
           <Route path="/missions" element={<Missions />} />
-          <Route path="/" element={<App />} />
+          <Route path="/myprofile" element={<Myprofile />} />
           <Route path="/" element={<App />} />
         </Routes>
       </Router>
