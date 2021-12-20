@@ -6,9 +6,10 @@ import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import {
-  BrowserRouter as Router, Routes, Route, Link,
+  BrowserRouter as Router, Routes, Route, Link, NavLink
 } from 'react-router-dom';
 import logo from './img/planet.png'
+import Missions from './components/Missions'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,13 +22,13 @@ ReactDOM.render(
             <Link className="logo" to="/"> Space Traveler's Hub</Link>
           </div>
           <div className='right'> 
-            <Link className="nav-link" to="/">Rockets</Link>
-            <Link className="nav-link" to="/">Missions</Link>
-            <Link className="nav-link" to="/">My Profile</Link>
+            <NavLink className="nav-link" to="/" >Rockets</NavLink>
+            <NavLink className="nav-link" to="/missions">Missions</NavLink>
+            <NavLink className="nav-link" to="/">My Profile</NavLink>
           </div>
         </nav>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/missions" element={<Missions />} />
           <Route path="/" element={<App />} />
           <Route path="/" element={<App />} />
         </Routes>
