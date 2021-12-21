@@ -5,17 +5,16 @@ import { Provider } from 'react-redux';
 import {
   BrowserRouter as Router, Routes, Route, Link, NavLink,
 } from 'react-router-dom';
-import App from './App';
 import store from './redux/store';
 import logo from './img/planet.png';
-import Missions from './components/Missions';
-import Myprofile from './components/Myprofile';
+import Missions from './components/missions/Missions';
+import Rockets from './components/rockets/Rockets';
+import Myprofile from './components/myprofile/Myprofile';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <App />
         <nav>
           <div className="left">
             <img className="img-logo" alt="logo" src={logo} />
@@ -28,9 +27,10 @@ ReactDOM.render(
           </div>
         </nav>
         <Routes>
+          <Route path="/" element={<Rockets />} />
+          <Route path="/rockets" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/myprofile" element={<Myprofile />} />
-          <Route path="/" element={<App />} />
         </Routes>
       </Router>
     </Provider>
