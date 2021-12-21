@@ -3,11 +3,16 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const url = 'https://api.spacexdata.com/v3/rockets';
 
+function timeout(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 const rocketsAsync = createAsyncThunk(
   'rockets/fetchRockets',
   async () => {
     const response = await fetch(url);
     const fetchedData = await response.json();
+    await timeout(1000);
     return fetchedData;
   },
 );
