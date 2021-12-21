@@ -1,4 +1,4 @@
-.myProfile-container{
+.myProfile-container {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -6,7 +6,8 @@
   margin-top: 4rem;
 }
 
-.misssionsProfile, .rocketsProfile{
+.misssionsProfile,
+.rocketsProfile {
   width: 50%;
   display: flex;
 }

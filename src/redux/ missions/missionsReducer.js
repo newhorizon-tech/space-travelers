@@ -4,7 +4,7 @@ const GET_MISSIONS = 'GET_MISSIONS';
 const JOIN_MISSION = 'JOIN_MISSION';
 const LEAVE_MISSION = 'LEAVE_MISSION';
 
-let initState = [];
+const initState = [];
 
 const dataToArr = (data) => {
   const arr = [];
@@ -31,9 +31,7 @@ export const missionLeave = (missionId) => async (dispatch) => {
 const missionsReducer = (state = initState, action) => {
   switch (action.type) {
     case GET_MISSIONS:
-      initState = [{ loaded: true }, ...action.missions];
-
-      return initState;
+      return action.missions;
     case JOIN_MISSION:
       return state.map((mission) => {
         if (mission.mission_id !== action.missionId) {
