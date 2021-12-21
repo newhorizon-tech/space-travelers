@@ -48,3 +48,9 @@
   border: 1px solid red;
   color: red;
 }
+
+.active-member{
+  background-color: green;
+  color: #fff;
+  border: 1px solid green;
+}

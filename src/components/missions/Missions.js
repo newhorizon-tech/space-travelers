@@ -7,8 +7,12 @@ function Missions() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions_reducer);
 
-  useEffect(() => { dispatch(missionsFetch()); }, []);
-  console.log(missions);
+  useEffect(() => {
+    if (missions.length <= 1) {
+      dispatch(missionsFetch());
+    }
+  }, []);
+
   return (
     <div className="mission-container">
       <div className="missionRaw">

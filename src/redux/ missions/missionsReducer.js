@@ -4,9 +4,7 @@ const GET_MISSIONS = 'GET_MISSIONS';
 const JOIN_MISSION = 'JOIN_MISSION';
 const LEAVE_MISSION = 'LEAVE_MISSION';
 
-const initState = [{
-  joined: false,
-}];
+let initState = [];
 
 const dataToArr = (data) => {
   const arr = [];
@@ -19,27 +17,25 @@ const dataToArr = (data) => {
 
 export const missionsFetch = () => async (dispatch) => {
   const data = await fetchMissions();
-  const convertedData = dataToArr(data);
-  dispatch({ type: GET_MISSIONS, payload: convertedData });
+  const allMissions = dataToArr(data);
+  dispatch({ type: GET_MISSIONS, missions: allMissions });
 };
 
 export const missionJoin = (missionId) => async (dispatch) => {
-  const data = await fetchMissions();
-  const convertedData = dataToArr(data);
-  dispatch({ type: JOIN_MISSION, missions: convertedData, missionId });
+  dispatch({ type: JOIN_MISSION, missionId });
 };
 export const missionLeave = (missionId) => async (dispatch) => {
-  const data = await fetchMissions();
-  const convertedData = dataToArr(data);
-  dispatch({ type: LEAVE_MISSION, missions: convertedData, missionId });
+  dispatch({ type: LEAVE_MISSION, missionId });
 };
 
 const missionsReducer = (state = initState, action) => {
   switch (action.type) {
     case GET_MISSIONS:
-      return action.payload;
+      initState = [{ loaded: true }, ...action.missions];
+
+      return initState;
     case JOIN_MISSION:
-      return action.missions.map((mission) => {
+      return state.map((mission) => {
         if (mission.mission_id !== action.missionId) {
           return mission;
         }
@@ -47,7 +43,7 @@ const missionsReducer = (state = initState, action) => {
       });
 
     case LEAVE_MISSION:
-      return action.missions.map((mission) => {
+      return state.map((mission) => {
         if (mission.mission_id !== action.missionId) {
           return mission;
         }
