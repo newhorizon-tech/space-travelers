@@ -9,6 +9,7 @@ import App from './App';
 import store from './app/store';
 import logo from './img/planet.png';
 import Missions from './components/Missions';
+import Rockets from './components/Rockets';
 import Myprofile from './components/Myprofile';
 
 ReactDOM.render(
@@ -28,9 +29,10 @@ ReactDOM.render(
           </div>
         </nav>
         <Routes>
+          <Route path="/" element={<Rockets />} />
+          <Route path="/rockets" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/myprofile" element={<Myprofile />} />
-          <Route path="/" element={<App />} />
         </Routes>
       </Router>
     </Provider>
