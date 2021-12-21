@@ -8,7 +8,7 @@ function Missions() {
   const missions = useSelector((state) => state.missions_reducer);
 
   useEffect(() => { dispatch(missionsFetch()); }, []);
-
+  console.log(missions);
   return (
     <div className="mission-container">
       <div className="missionRaw">
