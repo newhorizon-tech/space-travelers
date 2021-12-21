@@ -26,6 +26,11 @@ const Rocket = (props) => {
           {name}
         </h2>
         <p>
+          {booked ? (
+            <span className="reserved-badge">
+              Reserved
+            </span>
+          ) : ''}
           {description}
         </p>
         <button

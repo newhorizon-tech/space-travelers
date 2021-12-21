@@ -1,3 +1,12 @@
+:root {
+  --blue: #007bff;
+  --bubble-gum-pink: #ff5ab7;
+  --black: #121212;
+  --pinkish-grey: #c4c4c4;
+  --white-three: #fafafa;
+  --borderline: #e8e8e8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,16 +44,28 @@
 }
 
 .info {
-  height: 90%;
+  height: 95%;
   padding: 0 5%;
   display: flex;
+  border-radius: 5px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
 }
 
+.reserved-badge {
+  border-radius: 4px;
+  background-color: var(--blue);
+  color: var(--white-three);
+  font-weight: bold;
+  font-size: 0.8rem;
+  user-select: none;
+  padding: 0.5px 3px;
+  margin-right: 5px;
+}
+
 .rocket-btn {
-  background-color: #007bff;
+  background-color: var(--blue);
   border: 1px solid transparent;
   color: white;
   border-radius: 5%;
