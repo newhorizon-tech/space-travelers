@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
 .rockets {
   margin: 0 auto;
 }
+
 .rocket {
   display: flex;
   align-items: center;
@@ -15,8 +17,9 @@
 
 .rocket img {
   height: 100%;
-  width: 25%
+  width: 25%;
 }
+
 .info {
   height: 90%;
   padding: 0 5%;
@@ -27,13 +30,12 @@
 }
 
 .rocket-btn {
-    background-color: #007bff;
-    border: 1px solid transparent;
-    color: white;
-    border-radius: 5%;
-    font-size: 14px;
-    font-weight: bolder;
-    padding: 2%;
-    margin-bottom: 0;
-
+  background-color: #007bff;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 5%;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 2%;
+  margin-bottom: 0;
 }
