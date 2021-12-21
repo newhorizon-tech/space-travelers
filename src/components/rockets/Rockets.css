@@ -9,6 +9,18 @@
   align-items: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  #rockets .rocket {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid black;
+  }
+  #rockets .info {
+    align-items: center;
+  }
+}
+
 
 .rocket {
   display: flex;
@@ -19,8 +31,7 @@
 }
 
 .rocket img {
-  height: 100%;
-  width: 25%;
+  width: 250px;
 }
 
 .info {
@@ -39,7 +50,7 @@
   border-radius: 5%;
   font-size: 14px;
   font-weight: bolder;
-  padding: 2%;
+  padding: 5px;
   margin-bottom: 0;
 }
 
