@@ -8,20 +8,25 @@ import Rocket from './Rocket';
 function Rockets() {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets.value);
-  const loading = useSelector((state) => state.rockets.status === 'loading');
+  const status = useSelector((state) => state.rockets.status);
+  const loading = status === 'loading';
+  const loaded = status === 'loaded';
 
   useEffect(() => {
-    dispatch(rocketsAsync());
-  }, [dispatch]);
+    if (!loaded) {
+      dispatch(rocketsAsync());
+    }
+  }, []);
 
   return (
     <div id="rockets">
-      <Loader type="ThreeDots" visible={loading} color="#0290ff" />
+      <Loader type="Puff" visible={loading} color="black" />
       <span id="loading">{loading ? 'Loading' : ''}</span>
       {
         rockets.map((rocket) => (
           <Rocket
             key={rocket.id}
+            id={rocket.id}
             name={rocket.rocket_name}
             description={rocket.description}
             image={rocket.flickr_images ? rocket.flickr_images[0] : ''}
