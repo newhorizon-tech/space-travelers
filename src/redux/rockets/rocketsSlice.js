@@ -7,13 +7,20 @@ function timeout(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+const selectAttributes = ({
+  id, rocket_name, description, flickr_images,
+}) => ({
+  id, rocket_name, description, flickr_images, reserved: false,
+});
+
 const rocketsAsync = createAsyncThunk(
   'rockets/fetchRockets',
   async () => {
     const response = await fetch(url);
     const fetchedData = await response.json();
+    const data = fetchedData.map((x) => selectAttributes(x));
     await timeout(1000);
-    return fetchedData;
+    return data;
   },
 );
 
