@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router, Routes, Route, Link, NavLink,
 } from 'react-router-dom';
 import App from './App';
-import store from './app/store';
+import store from './redux/store';
 import logo from './img/planet.png';
 import Missions from './components/Missions';
 import Myprofile from './components/Myprofile';
@@ -22,9 +22,9 @@ ReactDOM.render(
             <Link className="logo" to="/"> Space Traveler&apos;s Hub</Link>
           </div>
           <div className="right">
-            <NavLink className="nav-link" to="/">Rockets</NavLink>
-            <NavLink className="nav-link" to="/missions">Missions</NavLink>
-            <NavLink className="nav-link" to="/myprofile">My Profile</NavLink>
+            <NavLink className="nav-link" to="/" activeClassName="activeLink">Rockets</NavLink>
+            <NavLink className="nav-link" to="/missions" activeClassName="activeLink">Missions</NavLink>
+            <NavLink className="nav-link" to="/myprofile" activeClassName="activeLink">My Profile</NavLink>
           </div>
         </nav>
         <Routes>

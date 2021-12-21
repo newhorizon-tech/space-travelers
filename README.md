@@ -1,31 +1,68 @@
-# space-travelers
+## Space Travellers
 
-React/Redux project
+In this project, we were working with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
+## Built With
 
-## Available Scripts
+- Java Script
+- React
+- Redux
+- HTML
+- CSS
 
-In the project directory, you can run:
+### Technologies used
 
-### `npm start`
+- Github
+- GitFlow
+- Visual Studio Code
+- webpack
+- npm
+- Heroku deployment
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![](demo.gif)
+[Netlify]()
+[Heroku]()
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run build`
+- go to the directory that you want to clone the repository in.
+- right click and choose Git Bash here.
+- type "git clone https://github.com/newhorizon-tech/space-travelers.git".
+- run `npm install` to install all the dependencies
+- Run `npm start` to bundle the files in the src folder
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+or
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Go to the dist folder and open index.html
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Authors
+
+👤 **Shoira**
+
+- GitHub: [@githubhandle](https://github.com/shoirata)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shoira-tashpulatova-bab4a7122/)
+
+![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=shoirata&count_private=true&theme=dark&show_icons=true)
+
+👤 **Alaukik**
+
+- GitHub: [@githubhandle](https://github.com/newhorizon-tech)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+
+![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=shoirata&count_private=true&theme=dark&show_icons=true)
+
+## Acknowledgments
+
+- Microverse
+
+## 📝 License
+
+This project is [MIT](MIT.md) licensed.
+
+## Show your support
+
+Give a ⭐️ if you like this project!
