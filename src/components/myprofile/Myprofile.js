@@ -1,9 +1,14 @@
 import React from 'react';
+import MisssionsProfile from './MissionsProfile';
+import RocketsProfile from './RocketsProfile';
+import './Myprofile.css';
 
 function Myprofile() {
   return (
-    <div>
-      <h1>Myprofile</h1>
+    <div className="myProfile-container">
+      <div className="misssionsProfile"><MisssionsProfile /></div>
+      <div className="rocketsProfile"><RocketsProfile /></div>
+
     </div>
   );
 }
