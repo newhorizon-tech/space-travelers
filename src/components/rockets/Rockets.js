@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Loader from 'react-loader-spinner';
-import { rocketsAsync } from '../features/rockets/rocketsSlice';
+import { rocketsAsync } from '../../redux/rockets/rocketsSlice';
 import './Rockets.css';
 import Rocket from './Rocket';
 
