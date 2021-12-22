@@ -1,0 +1,56 @@
+.mission-container {
+  margin: 1rem;
+}
+
+.missionRaw {
+  display: grid;
+  grid-template-columns: 15% 61% 13% 13%;
+  grid-auto-flow: column;
+  border: 1px  solid gray;
+}
+
+.missionRaw:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.missionName {
+  border-right: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: 800;
+}
+
+.missionDescription {
+  padding: 1rem;
+  border-right: 1px solid gray;
+}
+
+.missionStatus-border {
+  border-right: 1px solid gray;
+}
+
+.missionStatus {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.action-btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.joined {
+  border: 1px solid red;
+  color: red;
+}
+
+.active-member {
+  background-color: green;
+  color: #fff;
+  border: 1px solid green;
+}

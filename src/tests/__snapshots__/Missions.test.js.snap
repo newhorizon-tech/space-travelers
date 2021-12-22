@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission Component test Renders Mission Row 1`] = `
+<div
+  className="mission-container"
+>
+  <div
+    className="missionRaw"
+  >
+    <div
+      className="missionName"
+    >
+      Mission
+    </div>
+    <div
+      className="missionDescription"
+    >
+      Description
+    </div>
+    <div
+      className="missionStatus missionStatus-border"
+    >
+      Status
+    </div>
+    <div
+      className="missionStatus"
+    >
+      Status
+    </div>
+  </div>
+</div>
+`;
