@@ -4,12 +4,12 @@ const RocketsProfile = () => {
   const myRockets = useSelector((state) => state.rockets.value.filter((x) => !!x.reserved));
 
   return (
-    <div>
+    <div className="rocketsProfile">
       <h1>My Rockets</h1>
-      <ul id="my-rockets" className="my-list">
+      <ul id="my-mission" className="my-list">
         {myRockets.map((rocket) => (
           <li key={rocket.id}>
-            {rocket.rocket_name}
+            <span>{rocket.rocket_name}</span>
           </li>
         ))}
       </ul>
