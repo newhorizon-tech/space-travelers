@@ -1,7 +1,3 @@
---root {
-  grey: green;
-}
-
 .myProfile-container {
   display: flex;
   justify-content: space-between;
@@ -36,7 +32,7 @@
 }
 
 .my-list li:last-child {
-  border:none;
+  border: none;
 }
 
 .my-list li span {
