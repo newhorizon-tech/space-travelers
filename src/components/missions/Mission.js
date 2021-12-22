@@ -57,7 +57,7 @@ Mission.propTypes = {
     singleMission: PropTypes.string,
     description: PropTypes.string,
     mission_id: PropTypes.string,
-    joined: PropTypes.string,
+    joined: PropTypes.bool,
   }).isRequired,
 };
 
