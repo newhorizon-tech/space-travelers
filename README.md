@@ -2,6 +2,8 @@
 
 In this project, we were working with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
+![Screenshot](https://user-images.githubusercontent.com/62493636/147067263-2082b3fb-13c1-426b-8727-09554c778a89.png)
+
 ## Built With
 
 - Java Script
@@ -17,13 +19,12 @@ In this project, we were working with the real live data from the SpaceX API. Ou
 - Visual Studio Code
 - webpack
 - npm
-- Heroku deployment
+- Netlify deployment
 
 ## Demo
 
-![](demo.gif)
-[Netlify]()
-[Heroku]()
+[Netlify](https://happy-darwin-85979d.netlify.app)
+
 
 ## Getting Started
 
@@ -43,17 +44,17 @@ or
 
 👤 **Shoira**
 
-- GitHub: [@githubhandle](https://github.com/shoirata)
+- GitHub: [@shoirata](https://github.com/shoirata)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/shoira-tashpulatova-bab4a7122/)
 
 ![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=shoirata&count_private=true&theme=dark&show_icons=true)
 
 👤 **Alaukik**
 
-- GitHub: [@githubhandle](https://github.com/newhorizon-tech)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+- GitHub: [@newhorizon-tech](https://github.com/newhorizon-tech)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alaukik-tech)
 
-![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=shoirata&count_private=true&theme=dark&show_icons=true)
+![Shoira's GitHub stats](https://github-readme-stats.vercel.app/api?username=newhorizon-tech&count_private=true&theme=dark&show_icons=true)
 
 ## Acknowledgments
 
