@@ -21,9 +21,9 @@ ReactDOM.render(
             <Link className="logo" to="/"> Space Traveler&apos;s Hub</Link>
           </div>
           <div className="right">
-            <NavLink className="nav-link" to="/" activeClassName="activeLink">Rockets</NavLink>
-            <NavLink className="nav-link" to="/missions" activeClassName="activeLink">Missions</NavLink>
-            <NavLink className="nav-link" to="/myprofile" activeClassName="activeLink">My Profile</NavLink>
+            <NavLink className="nav-link" to="/" end="activeLink">Rockets</NavLink>
+            <NavLink className="nav-link" to="/missions" end="activeLink">Missions</NavLink>
+            <NavLink className="nav-link" to="/myprofile" end="activeLink">My Profile</NavLink>
           </div>
         </nav>
         <Routes>

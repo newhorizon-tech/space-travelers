@@ -1,3 +1,7 @@
+--root {
+  grey: green;
+}
+
 .myProfile-container {
   display: flex;
   justify-content: space-between;
@@ -10,4 +14,31 @@
 .rocketsProfile {
   width: 50%;
   display: flex;
+  flex-direction: column;
+}
+
+.my-list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.my-list li {
+  width: 100%;
+  list-style-type: none;
+  border-bottom: 1px solid #dfdfdf;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.my-list li:last-child {
+  border:none;
+}
+
+.my-list li span {
+  padding-left: 10px;
 }

@@ -64,4 +64,5 @@ nav {
 
 .active {
   color: red;
+  text-decoration: underline;
 }
