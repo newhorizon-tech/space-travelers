@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets Component test Renders Rocket Page 1`] = `
+<div
+  id="rockets"
+>
+  <span
+    id="loading"
+  >
+    
+  </span>
+</div>
+`;
