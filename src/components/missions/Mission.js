@@ -2,7 +2,7 @@ import React from 'react';
 import './missions.css';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { missionJoin, missionLeave } from '../../redux/ missions/missionsReducer';
+import { missionJoin, missionLeave } from '../../redux/missions/missionsReducer';
 
 function Mission({ singleMission }) {
   const dispatch = useDispatch();

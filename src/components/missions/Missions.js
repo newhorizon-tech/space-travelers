@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { missionsFetch } from '../../redux/ missions/missionsReducer';
+import { missionsFetch } from '../../redux/missions/missionsReducer';
 import Mission from './Mission';
 
 function Missions() {
